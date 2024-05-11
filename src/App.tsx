@@ -21,12 +21,16 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <p>Barcode scanner</p>
-      {!scannedText && <video width={400} id="videoElementId"></video>}
-      {scannedText && <p>Scanned Text: {scannedText}
-      </p>}
-    </div>
+    <main>
+      <header>
+        <h1>Barcode scanner</h1>
+      </header>
+
+      <section>
+        {!scannedText && <video width={400} id="videoElementId"></video>}
+        {scannedText && <p>Scanned Text: {scannedText}</p>}
+      </section>
+    </main>
   );
 }
 
