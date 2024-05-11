@@ -30,6 +30,9 @@ function App() {
         {!scannedText && <video width={400} id="videoElementId"></video>}
         {scannedText && <p>Scanned Text: {scannedText}</p>}
       </section>
+      <footer>
+      <p>Copyright &copy; 2022 <a href="https://github.com/julekgwa">@julekgwa</a>. All rights reserved.</p>
+    </footer>
     </main>
   );
 }
